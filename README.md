@@ -6,6 +6,7 @@ See the [Wiki](https://github.com/incmve/roomba-eps8266/wiki/) for more info.
 
 Use at your own risk!!
 
+Add "Time by Michael Margolis" library to sketch before compilation.
 
 ![alt tag](https://github.com/incmve/roomba-eps8266/blob/master/Images/roombot-interface.jpg)
 
