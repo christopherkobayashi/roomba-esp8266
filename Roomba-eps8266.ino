@@ -41,8 +41,8 @@ String formatBytes(size_t bytes) {
 }
 
 // WIFI
-String ssid    = "your ssid";
-String password = "password";
+String ssid    = "";
+String password = "";
 String espName    = "Roombot";
 
 // webserver
@@ -678,8 +678,12 @@ String yourdata;
   String str = String(Username) + ":" + String(Password);
   str.toCharArray(uname, BASE64_LEN);
   memset(unameenc, 0, sizeof(unameenc));
- // base64_encode(unameenc, uname, strlen(uname));
-base64 encoder;
+
+  // Upstream commented this out ...
+  // base64_encode(unameenc, uname, strlen(uname));
+
+  // I commented this out ... unused, breaks compile
+  // base64 encoder;
   String auth = Username;
   auth += ":";
   auth += Password;
